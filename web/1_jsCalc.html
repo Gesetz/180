@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js cals</title>
+	<script type="text/javascript">
+		function calc(){
+			a = parseInt(document.getElementById("1").value);
+			b = parseInt(document.getElementById("2").value);
+			document.getElementById("res").innerHTML= (a + b);
+			return 0;
+		}
+	</script>
+	<style type="text/css">
+	#main{
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+<div id="main">
+	<h1>Простой калькулятор-складыватель</h1>
+	<div>
+		Пожалуйста, введит 2 числа для сложения
+	</div>
+	<div>
+		<input type='text' id='1'/>
+		<br/>
+		<input type='text' id='2'/>
+	</div>
+	<input type="button" value="Расчет" onclick="calc();"/>
+	<p>Результат:</p>
+	<div id='res'></div>
+</div>
+</body>
+</html>
