@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day2</title>
+	<script type='text/javascript'>
+	function calc(){
+		a = parseInt(document.getElementById("1").value);
+		x = document.getElementById("2").value;
+		b = parseInt(document.getElementById("3").value);
+		switch(x){
+			case '+':
+				document.getElementById('res').innerHTML=(a+b);
+			break;
+			case '-':
+				document.getElementById('res').innerHTML=(a-b);
+			break;
+			case '*':
+				document.getElementById('res').innerHTML=(a*b);
+			break;
+			case '/':
+				document.getElementById('res').innerHTML=(a/b);
+			break;
+			default:
+				alert ('wrong');
+			break;
+		}
+	}
+	</script>
+	<style type="text/css">
+		header {
+  height: 4em;
+  background-color:red;
+  position:relative;
+}
+	</style>
+</head>
+<body>
+<header><h1>Hello World2</h1></header>
+<div>Enter 2 numbers</div>
+<input type="text" id='1'>
+<input type="text" id='2'>
+<input type="text" id='3'>
+<input type="button" id='sum' value='sum' onclick="calc()">
+<div id="res"></div>
+
+</body>
+</html>
